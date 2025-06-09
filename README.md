@@ -1,4 +1,4 @@
-# Weather Application - BreezeWire
+# BreezeWire - Weather Application
 
 A full-stack weather application that provides current weather conditions, forecasts, and interactive maps with location search capabilities.
 
@@ -14,32 +14,6 @@ A full-stack weather application that provides current weather conditions, forec
 - **Favorites Management**: Save and manage favorite locations with MongoDB storage
 - **Weather Charts**: Interactive data visualization using Highcharts
 - **Responsive Design**: Modern UI built with Bootstrap and React Bootstrap
-
-## 📸 Screenshots
-
-### Main Weather Dashboard
-![Main Dashboard](screenshots/main-dashboard.png)
-*Current weather display with location search and interactive map*
-
-### Weather Forecast
-![Weather Forecast](screenshots/forecast-view.png)
-*5-day weather forecast with detailed daily information*
-
-### Interactive Charts
-![Weather Charts](screenshots/weather-charts.png)
-*Hourly weather data visualization with temperature, humidity, and pressure trends*
-
-### Location Search & Maps
-![Location Search](screenshots/location-search.png)
-*Google Maps integration with location search and selection*
-
-### Favorites Management
-![Favorites](screenshots/favorites-management.png)
-*Save and manage favorite locations for quick access*
-
-### Mobile Responsive Design
-![Mobile View](screenshots/mobile-responsive.png)
-*Responsive design optimized for mobile devices*
 
 ## 🛠️ Tech Stack
 
@@ -62,17 +36,17 @@ A full-stack weather application that provides current weather conditions, forec
 ## 📁 Project Structure
 
 ```
-Assignment3/
-├── Assignment3_Frontend/          # React TypeScript Frontend
+BreezeWire/
+├── BreezeWire_Frontend/          # React TypeScript Frontend
 │   ├── dist/                     # Built production files
 │   ├── src/                      # Source code (components, styles, etc.)
 │   ├── package.json              # Frontend dependencies
 │   └── vite.config.ts            # Vite configuration
-├── Assignment3_backend/           # Node.js Express Backend
+├── BreezeWire_Backend/           # Node.js Express Backend
 │   ├── index.js                  # Main server file with API routes
 │   ├── package.json              # Backend dependencies
 │   └── .gcloudignore            # Google Cloud deployment config
-└── HW3_Description.pdf           # Assignment requirements
+└── README.md                     # Project documentation
 ```
 
 ## 🚀 Getting Started
@@ -90,7 +64,7 @@ Assignment3/
 
 1. Navigate to the backend directory:
    ```bash
-   cd Assignment3_backend
+   cd BreezeWire_Backend
    ```
 
 2. Install dependencies:
@@ -117,7 +91,7 @@ Assignment3/
 
 1. Navigate to the frontend directory:
    ```bash
-   cd Assignment3_Frontend
+   cd BreezeWire_Frontend
    ```
 
 2. Install dependencies:
@@ -179,13 +153,23 @@ The frontend is built with Vite and can be deployed to static hosting services o
 - Intuitive navigation between current weather and forecast views
 - Loading states and error handling for better user experience
 
+## 🔑 Environment Setup
+
+### Required API Keys
+1. **Google Maps API**: Enable Maps JavaScript API, Places API, and Geocoding API
+2. **Tomorrow.io API**: Sign up for weather data access
+3. **IPinfo API**: For IP-based location detection
+
+### MongoDB Configuration
+Ensure MongoDB is running locally or configure connection to MongoDB Atlas for cloud deployment.
+
 ## 🤝 Contributing
 
-This is a course assignment project. For educational purposes and portfolio demonstration.
+This project is open for contributions. Please ensure all changes maintain code quality and follow the established patterns.
 
 ## 📄 License
 
-This project is for educational purposes as part of a university course assignment.
+This project is for educational and portfolio demonstration purposes.
 
 ## 👨‍💻 Development Notes
 
@@ -193,4 +177,19 @@ This project is for educational purposes as part of a university course assignme
 - MongoDB connection is configured for cloud deployment
 - CORS is enabled for development with separate frontend/backend servers
 - TypeScript provides type safety for the React frontend
-- ESLint configuration ensures code quality and consistency 
+- ESLint configuration ensures code quality and consistency
+
+## 🐛 Troubleshooting
+
+### Common Issues
+- **API Key Errors**: Ensure all required API keys are properly configured in the `.env` file
+- **CORS Issues**: Verify backend server is running and CORS is properly configured
+- **MongoDB Connection**: Check MongoDB service is running and connection string is correct
+- **Build Errors**: Clear node_modules and reinstall dependencies if build fails
+
+### Getting Help
+If you encounter issues, check:
+1. All dependencies are installed (`npm install`)
+2. Environment variables are properly set
+3. API keys have necessary permissions enabled
+4. MongoDB service is accessible 
