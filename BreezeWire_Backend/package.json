@@ -1,0 +1,47 @@
+{
+  "name": "weather-app-backend",
+  "version": "1.0.0",
+  "description": "Backend API server for the Weather Application - provides weather data, location services, and favorites management",
+  "main": "index.js",
+  "author": "Assignment 3 - Weather App",
+  "license": "MIT",
+  "keywords": [
+    "weather",
+    "api",
+    "nodejs",
+    "express",
+    "mongodb",
+    "google-maps",
+    "tomorrow-io"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husnain-qadri/BreezeWire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/husnain-qadri/BreezeWire/issues"
+  },
+  "homepage": "https://github.com/husnain-qadri/BreezeWire.git",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linting not configured\" && exit 0"
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "node-ipinfo": "^3.5.5",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
